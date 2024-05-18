@@ -1,0 +1,99 @@
+:root{
+    --body-color: #525252;
+    --container-color: #8A8A8A;
+    --button1-color: #FFFFFF;
+    --button1-hover: #E0E0E0;
+    --button1-active: #BEBEBE;
+    --button2-color: #F19119;
+    --button2-hover: #E37600;
+    --button2-active: #FF9D25;
+    --text-color: #252525;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--body-color);
+    height: 100vh;
+}
+
+.container{
+    background: var(--container-color);
+    flex-basis: 400px;
+    height: 90vh;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.screen{
+    background: #FFF;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: auto;
+    padding: 20px;
+}
+
+.screen input{
+    border: 0;
+    outline: 0;
+    cursor: default;
+    width: 100%;
+    font-size: 40px;
+    text-align: right;
+    color: var(--text-color);
+}
+
+.button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.button-row button{
+    border: 0;
+    outline: 0;
+    color: var(--text-color);
+    background: var(--button1-color);
+    border-radius: 30px;
+    cursor: pointer;
+    flex-basis: 20%;
+    font-size: 30px;
+    height: 65px;
+}
+
+.button-row button:hover{
+    background: var(--button1-hover);
+}
+
+.button-row button:active{
+    background: var(--button1-active);
+}
+
+.button-row button:last-child{
+    background: var(--button2-color);
+}
+
+.button-row button:last-child:hover{
+    background: var(--button2-hover);
+}
+
+.button-row button:last-child:active{
+    background: var(--button2-active);
+}
+
+.button-row .buttonC{
+    flex-basis: 47%;
+}
+
+.button-row .button0{
+    flex-basis: 47%;
+}
